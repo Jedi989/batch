@@ -10,10 +10,9 @@ import javax.batch.api.chunk.AbstractItemReader;
 import javax.batch.operations.JobOperator;
 import javax.batch.runtime.BatchRuntime;
 import javax.batch.runtime.context.JobContext;
-import javax.inject.Inject;
-import javax.inject.Named; 
+import javax.inject.*; 
 
-@Named
+@Named("SimpleItemReader")
 public class SimpleItemReader extends AbstractItemReader {
 
 	@Inject

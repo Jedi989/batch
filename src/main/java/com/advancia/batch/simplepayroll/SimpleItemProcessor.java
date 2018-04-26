@@ -5,7 +5,7 @@ import javax.batch.runtime.context.JobContext;
 import javax.inject.Inject;
 import javax.inject.Named;
 
-@Named
+@Named("simpleItemProcessor")
 public class SimpleItemProcessor implements ItemProcessor {
 
 	@Inject
