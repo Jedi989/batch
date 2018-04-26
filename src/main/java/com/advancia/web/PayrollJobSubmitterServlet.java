@@ -45,7 +45,7 @@ public class PayrollJobSubmitterServlet extends HttpServlet {
 	private long startNewBatchJob() throws Exception {
 		JobOperator jobOperator = BatchRuntime.getJobOperator();
 		Properties props = new Properties();
-		props.setProperty("payrollInputDataFileName", payrollInputDataFileName);
-		return jobOperator.start(SimplePayrollJob, props);
+		props.setProperty("payrollInputDataFileName", "payrollInputDataFileName");
+		return jobOperator.start("SimplePayrollJob", props);
 	}
 }
