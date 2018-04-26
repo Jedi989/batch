@@ -24,7 +24,7 @@ import com.advancia.batch.simplepayroll.*;
  * 	<url-pattern>/payrollJob/submit</url-pattern>
  * </servlet-mapping>
  */
-@WebServlet(urlPatterns = "/payrollJob/submit")
+@WebServlet(urlPatterns = "/payrollJob")
 public class PayrollJobSubmitterServlet extends HttpServlet {
 
 	
